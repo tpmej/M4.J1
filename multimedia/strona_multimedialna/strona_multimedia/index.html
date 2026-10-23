@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strona multimedialna</title>
+  <style>
+    body {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #f5f7fa;
+    }
+    section {
+      margin: 28px 0;
+      padding: 22px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+    video {
+      display: block;
+      width: 800px;
+      max-width: 100%;
+      height: auto;
+    }
+    iframe {
+      width: 800px;
+      max-width: 100%;
+      aspect-ratio: 16 / 9;
+      border: 0;
+    }
+    audio {
+      width: 100%;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Moja strona multimedialna</h1>
+
+  <section>
+    <h2>Film z napisami</h2>
+    <p>Film lokalny ma szerokość 800 px, kontrolki, autoodtwarzanie, pętlę i początkowe wyciszenie.</p>
+    <video controls autoplay loop muted playsinline width="800" preload="metadata">
+      <source src="media/film.mp4" type="video/mp4">
+      <track src="media/napisy.vtt" kind="subtitles" srclang="pl" label="Polski" default>
+      Twoja przeglądarka nie obsługuje elementu video.
+    </video>
+    <p>Jeśli film nie zacznie się sam, kliknij przycisk odtwarzania. Przeglądarki mogą blokować autoodtwarzanie.</p>
+  </section>
+
+  <section>
+    <h2>Dźwięk</h2>
+    <audio controls preload="metadata">
+      <source src="media/dzwiek.mp3" type="audio/mpeg">
+      <source src="media/dzwiek.ogg" type="audio/ogg">
+      Twoja przeglądarka nie obsługuje elementu audio.
+    </audio>
+  </section>
+
+  <section>
+    <h2>Film z YouTube</h2>
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/jfKfPfyJRdk"
+      title="Film z YouTube — Lofi Girl"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </section>
+</body>
+</html>
