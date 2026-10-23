@@ -1,0 +1,10 @@
+body {
+    background-color: #ffe600;
+}
+
+table, td, th {
+    border: 1px rgb(0, 50, 50) solid;
+    border-collapse: collapse;
+    width: 50vw;
+    text-align: center;
+}
