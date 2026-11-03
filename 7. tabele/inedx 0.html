@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Page Title</title>
+    <title>Tabele</title>
     <link rel='stylesheet' href='main.css'>
 </head>
 <body>
@@ -11,20 +11,63 @@
         Table w HTML
     </h1>
     <table>
-        <tr>
-            <th>L.p.</th>
-            <th colspan = 2>Nazwisko Imię</th>
-        </tr>
-        <tr>
-            <td>1.</td>
-            <td>Świątek</td>
-            <td>Artur</td>
-        </tr>
-        <tr>
-            <td>2.</td>
-            <td>Puszkarek</td>
-            <td>Wojciech</td>
-        </tr>
+        <caption>Lista użytkowników</caption>
+        <colgroup>
+            <col style="background-color: lightblue;">
+            <col span="2" style="background-color: greenyellow;">
+            <col span="2" style="background-color: burlywood;">
+        </colgroup>
+        <thread>
+            <tr>
+                <th rowspan="2">L.p.</th>
+                <th rowspan="2">Nazwisko</th>
+                <th rowspan="2">Imię</th>
+                <th colspan="2">Wpłata</th>
+            </tr>
+            <tr>
+                <th>Rata I</th>
+                <th>Rata II</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Świątek</td>
+                <td>Artur</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Puszkarek</td>
+                <td>Wojciech</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Świątek</td>
+                <td>Artur</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Puszkarek</td>
+                <td>Wojciech</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <th rowspan="2" colspan="2">Podsumowanie</th>
+                <th>Rata</th>
+                <th>400</th>
+                <th>400</th>
+            </tr>
+            <tr>
+                <th>Łącznie</th>
+                <td colspan=2>800</td>
+            </tr>
+        </thread>
     </table>
+    <p>Przydadzą się znaczniki <code>&lt;colgroup&gt;</code>, <code>&lt;col&gt;</code> oraz &lt;, &gt;, &quot;, &copy;, &euro;, &apos;, &nbsp;.</p>
 </body>
 </html>
