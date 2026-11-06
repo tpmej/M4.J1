@@ -1,0 +1,25 @@
+body {
+    background-color: #cfcfcf;
+}
+
+.big_table {
+    border: 1px rgb(0, 50, 50) solid;
+    border-collapse: collapse;
+    width: 55vw;
+    height: 3vw;
+    text-align: center;
+}
+
+.small_table {
+    border: 1px rgb(0, 50, 50) solid;
+    border-collapse: collapse; 
+    width: 55vw;
+    height: 1vw;
+    text-align: center;
+}
+
+th, td {
+    border: 1px rgb(0, 50, 50) solid;
+    border-collapse: collapse;
+    text-align: center;
+}
